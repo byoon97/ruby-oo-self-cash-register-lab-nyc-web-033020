@@ -13,6 +13,8 @@ class CashRegister
     quantity.times do
       @cart << title
     end
+
+    @cart
   end
 
   def apply_discount
