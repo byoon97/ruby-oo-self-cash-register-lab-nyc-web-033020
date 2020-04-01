@@ -13,8 +13,6 @@ class CashRegister
     quantity.times do
       @cart << title
     end
-
-    @cart
   end
 
   def apply_discount
@@ -24,5 +22,9 @@ class CashRegister
     else
       "There is no discount to apply."
     end
+  end
+
+  def items
+    return @cart
   end
 end
