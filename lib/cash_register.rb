@@ -27,4 +27,8 @@ class CashRegister
   def items
     return @cart
   end
+
+  def void_last_transaction
+    @cart.delete(@cart[-1])
+  end
 end
