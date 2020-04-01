@@ -29,6 +29,6 @@ class CashRegister
   end
 
   def void_last_transaction
-    @cart.delete(@cart[-1])
+    @total -= @price
   end
 end
